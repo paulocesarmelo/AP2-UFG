@@ -12,7 +12,8 @@ package lista2;
  */
 public class Pessoa {
     
-    private String nome, cpf, genero, rg;
+    private String nome, cpf, genero, rg, classeEleitoral;
+    private int idade;
 
     public Pessoa(String nome, String cpf, String genero, String rg) {
         this.nome = nome;
@@ -53,6 +54,26 @@ public class Pessoa {
 
     public void setRg(String rg) {
         this.rg = rg;
+    }
+    
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+    
+    public int getIdade(){
+        return this.idade;
+    }
+    
+    public String verifClasseEleitoral(){
+        if(idade < 16){
+            classeEleitoral = "não eleitor";
+        }else if(idade >= 18 && idade <= 65){
+            classeEleitoral = "obrigatorio";
+        }else if(idade >= 16 && idade < 18 || idade > 65){
+            classeEleitoral = "facultativo";
+        }
+        
+        return classeEleitoral;
     }
     
     public void imprimirPessoa(){

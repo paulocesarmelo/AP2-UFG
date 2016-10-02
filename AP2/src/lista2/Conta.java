@@ -91,4 +91,10 @@ public abstract class Conta {
     public void imprimirConta(){
         System.out.println("Saldo: "+saldo);
     }
+    
+    public void transferir(Conta destino, int valor){
+        
+        sacar(valor);
+        destino.depositar(valor);
+    }
 }

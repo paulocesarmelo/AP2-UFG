@@ -6,6 +6,8 @@
 
 package lsita3;
 
+import java.util.Objects;
+
 /**
  *
  * @author PauloCésar
@@ -14,6 +16,7 @@ public class Produto {
     
     private String nome;
     private double preco;
+    private int codBarras;
 
     public Produto(){}
     
@@ -36,9 +39,24 @@ public class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }    
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
     }
+
     
+    public boolean equals(int cod) {
+              
+        if (this.codBarras != cod) {
+            return false;
+        }
+        return true;
+    }
         
+    
     
     @Override
     public String toString() {

@@ -49,8 +49,19 @@ public class Loja {
         
         for(int l=0; l<i; l++){
             cds[l].imprimir();            
-        }      
+        }  
         
+        
+        System.out.println("Informe o codigo de barras para pesquisa: ");
+        int cod = input.nextInt();
+        int pos;
+        for(int m=0; m<5; m++){
+            if(produtos[i].equals(cod)){
+                System.out.println("Produto igual");
+                pos = m;
+                break;
+            }
+        }
         
     }
 }

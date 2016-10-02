@@ -30,6 +30,6 @@ public class TesteConta {
         System.out.println("Conta especial: ");
         ce.imprimirConta();
         
-        
+        ce.transferir(cp, 10);
     }
 }

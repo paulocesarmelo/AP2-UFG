@@ -9,7 +9,7 @@ package lista2;
  *
  * @author PauloCésar
  */
-public abstract class Conta {
+public class Conta {
 
     //Atributos
     protected String x;
@@ -59,12 +59,13 @@ public abstract class Conta {
         this.saldo = saldo;
     }
     //Método sacar
-    public void sacar(int valor) {
+    public void sacar(int valor) throws Exception{
         
         if(valor < saldo){
             saldo = saldo - valor;
         }else{
-            System.out.println("Saldo insuficiente!");
+            //throw new Exception("Saldo insuficiente");
+            
         }
     }
 
@@ -92,7 +93,7 @@ public abstract class Conta {
         System.out.println("Saldo: "+saldo);
     }
     
-    public void transferir(Conta destino, int valor){
+    public void transferir(Conta destino, int valor) throws Exception{
         
         sacar(valor);
         destino.depositar(valor);

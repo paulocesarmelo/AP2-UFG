@@ -4,12 +4,16 @@
  * and open the template in the editor.
  */
 
-package lsita3;
+package teorica.aulainterface;
 
 /**
  *
  * @author PauloCésar
  */
-public class DVD extends Produto{
+public class ClasseX2 extends PaiX{
+    
+    public void alteraX(){
+        super.setX(5);
+    }
     
 }

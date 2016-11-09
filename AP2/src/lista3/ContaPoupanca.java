@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lsita3;
+package lista3;
 
 import lista2.Conta;
 

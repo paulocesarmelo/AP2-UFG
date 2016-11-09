@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lsita3;
+package lista3;
 
 /**
  *
@@ -22,7 +22,7 @@ public class TesteConta {
         ce.setLimite(500);
         
         ce.sacar(3500);
-        cp.sacar(1500);
+        //cp.sacar(1500);
         
         System.out.println("Conta poupança: ");
         cp.imprimirConta();
@@ -30,6 +30,6 @@ public class TesteConta {
         System.out.println("Conta especial: ");
         ce.imprimirConta();
         
-        ce.transferir(cp, 10);
+        //ce.transferir(cp, 10);
     }
 }

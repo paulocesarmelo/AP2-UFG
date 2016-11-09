@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package lsita3;
+package revisao;
 
 /**
  *
  * @author PauloCésar
  */
-public class Livro {
+public class TesteEmpresa {
     
 }

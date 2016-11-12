@@ -4,21 +4,18 @@
  * and open the template in the editor.
  */
 
-package teorica.thread;
+package lista8;
 
 /**
  *
  * @author PauloCésar
  */
-public class TesteThreadSimples {
+public class Ex1 {
     public static void main(String[] args) {
+        Relogio r = new Relogio();
+        Thread tRelogio = new Thread(r);
         
-        ThreadSimples ts1 = new ThreadSimples("Thread 1");
-        ThreadSimples ts2 = new ThreadSimples("Thread 2");
-        
-        //Thread t1 = new Thread(ts1);
-                
-        ts2.start();
-        ts1.start();
+        tRelogio.start();
     }
+    
 }

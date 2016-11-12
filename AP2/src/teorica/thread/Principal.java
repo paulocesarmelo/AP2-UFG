@@ -6,6 +6,9 @@
 
 package teorica.thread;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  *
  * @author PauloCésar
@@ -13,12 +16,14 @@ package teorica.thread;
 public class Principal {
     
     public static void main(String[] args) {
-        GeraPDF pdf = new GeraPDF();
-        
+        GeraPDF pdf = new GeraPDF();        
+      
         BarraProgresso barra = new BarraProgresso();
+        barra.setPriority(Thread.MAX_PRIORITY);
         barra.start();
-        new Thread(pdf).start();
-                
+        Thread t1 = new Thread(pdf);
+        t1.setPriority(Thread.MIN_PRIORITY);
+        t1.start();
         
         
         

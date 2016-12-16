@@ -1,0 +1,3 @@
+Algoritmo e Programacao 2;Paulo Cesar;40
+ED1;Paulo Cesar;30
+ED2;Fulano;20
